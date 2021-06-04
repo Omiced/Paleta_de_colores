@@ -1,4 +1,8 @@
-"user strict";
 const color = document.querySelector("#color");
 const salida = document.querySelector("#salida");
-const storage = localStorage.getItem("colorValue") || "#ffffff";
+const lista = document.querySelector("#list");
+const number = document.querySelector("#colors");
+
+const storage = JSON.parse(localStorage.getItem('colorValue')) || "#ffffff";
+console.log(storage);
+const colorList = JSON.parse(localStorage.getItem("colorList")) || [];
